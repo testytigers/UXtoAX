@@ -1,0 +1,30 @@
+---
+import BlogPost from '../../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../../content/blog/*.mdx');
+  return posts.map(post => ({
+    params: { slug: post.frontmatter.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, frontmatter } = post;
+---
+
+<BlogPost
+  title={frontmatter.title}
+  description={frontmatter.description}
+  category={frontmatter.category}
+  author={frontmatter.author}
+  publishedAt={frontmatter.publishedAt}
+  updatedAt={frontmatter.updatedAt}
+  readTime={frontmatter.readTime}
+  slug={frontmatter.slug}
+  tags={frontmatter.tags}
+  ogImage={frontmatter.ogImage ?? `https://uxintoax.com/og/blog/${frontmatter.slug}.png`}
+  faqs={frontmatter.faqs}
+>
+  <Content />
+</BlogPost>

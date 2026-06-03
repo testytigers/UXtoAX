@@ -1,0 +1,294 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const blogFiles = await Astro.glob('../content/blog/*.mdx');
+const allPosts  = blogFiles
+  .map(f => ({ ...f.frontmatter }))
+  .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+---
+
+<Base
+  title="Design the Agentic Era"
+  description="uxintoax.com teaches UX designers to master Agent Experience (AX) — the design discipline for the AI era. Blog, job board, skills data, and courses."
+  canonical="https://uxintoax.com"
+  type="website"
+  ogImage="https://uxintoax.com/og/home.png"
+  ogImageAlt="uxintoax.com — From UX to AX"
+>
+  <style>
+    html, body { background: #0B0B0B !important; color: #E0E0E0 !important; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; overflow: hidden;
+      min-height: 540px;
+      display: flex; flex-direction: column; justify-content: center;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.85) 100%),
+        url('/hero-bg.jpg') center/cover no-repeat,
+        linear-gradient(160deg, #091509 0%, #0A0A0A 55%, #190A06 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      max-width: 1200px; margin: 0 auto;
+      padding: 56px 24px; width: 100%;
+      text-align: center;
+    }
+    .hero-h1 {
+      font-family: 'Ultra', 'Bebas Neue', serif;
+      font-size: 67px;
+      color: #fff; line-height: 1.05;
+      letter-spacing: 0.01em; text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero-sub {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.0625rem; color: rgba(255,255,255,0.7);
+      line-height: 1.55;
+    }
+
+    /* ── CARDS ── */
+    .cards-section { background: #0B0B0B; padding: 44px 24px 72px; }
+    .cards-wrap { max-width: 1200px; margin: 0 auto; }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 900px) { .cards-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 580px) { .cards-grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: linear-gradient(90deg, #4E4E4E 0.11%, #222 100.05%);
+      border: 1px solid #2A2A2A;
+      border-radius: 6px; padding: 22px;
+      display: flex; flex-direction: column; gap: 10px;
+      text-decoration: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .card:hover { border-color: #7CFF00; background: linear-gradient(90deg, #5A5A5A 0.11%, #2E2E2E 100.05%); text-decoration: none; }
+    .card-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9375rem; font-weight: 700;
+      color: #fff; line-height: 1.35;
+    }
+    .card-desc {
+      font-size: 0.875rem; color: #fff; line-height: 1.65; flex: 1;
+      display: -webkit-box; -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .card-foot {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding-top: 10px; border-top: 1px solid #2A2A2A;
+      margin-top: auto;
+    }
+    .tags { display: flex; gap: 5px; flex-wrap: wrap; }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem; font-weight: 600; color: #444;
+      background: #111; border: 1px solid #1C1C1C;
+      padding: 3px 9px; border-radius: 3px; white-space: nowrap;
+    }
+    .apple {
+      font-size: 1rem; flex-shrink: 0; line-height: 1;
+      background: none; border: none; padding: 0;
+      cursor: pointer; transition: transform 0.15s;
+    }
+    .apple:hover { transform: scale(1.25); }
+
+    /* ── Share Modal ── */
+    .sm-overlay {
+      position: fixed; inset: 0; z-index: 300;
+      background: rgba(0,0,0,0.78);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      backdrop-filter: blur(5px);
+    }
+    .sm-overlay[hidden] { display: none; }
+    .sm-box {
+      background: #141414; border: 1px solid #2A2A2A;
+      border-radius: 10px; width: 100%; max-width: 440px;
+      padding: 28px; position: relative;
+    }
+    .sm-close {
+      position: absolute; top: 14px; right: 14px;
+      background: none; border: none; cursor: pointer;
+      color: #555; padding: 6px; line-height: 1;
+      transition: color 0.12s; border-radius: 4px;
+    }
+    .sm-close:hover { color: #fff; }
+    .sm-preview {
+      background: #0B0B0B; border: 1px solid #222;
+      border-left: 3px solid #7CFF00;
+      border-radius: 6px; padding: 18px; margin-bottom: 22px;
+    }
+    .sm-preview-site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem; color: #7CFF00;
+      text-transform: uppercase; letter-spacing: 0.09em;
+      margin-bottom: 7px;
+    }
+    .sm-preview-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.925rem; font-weight: 700;
+      color: #E0E0E0; line-height: 1.3; margin-bottom: 7px;
+    }
+    .sm-preview-desc {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.8rem; color: #666; line-height: 1.5;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .sm-share-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem; color: #444;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+    .sm-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .sm-btn {
+      display: flex; align-items: center; justify-content: center; gap: 7px;
+      padding: 10px 12px; border-radius: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem; font-weight: 600;
+      text-decoration: none; transition: opacity 0.15s; white-space: nowrap;
+    }
+    .sm-btn:hover { opacity: 0.82; text-decoration: none; }
+    .sm-btn--li  { background: #0A66C2; color: #fff; }
+    .sm-btn--x   { background: #000; color: #fff; border: 1px solid #333; }
+    .sm-btn--fb  { background: #1877F2; color: #fff; }
+    .sm-btn--rd  { background: #FF4500; color: #fff; }
+  </style>
+
+  <Nav />
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-h1">
+        From UX Designer<br/>
+        to Agentic Designer
+      </h1>
+      <p class="hero-sub">
+        Your Survival Blog as a UX Designer,<br/>
+        in a Chaotic AI World
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CARD GRID ── -->
+  <section class="cards-section">
+    <div class="cards-wrap">
+      <div class="cards-grid">
+        {allPosts.map(post => (
+          <a href={`/blog/${post.slug}`} class="card">
+            <p class="card-title">{post.title}</p>
+            <p class="card-desc">{post.description}</p>
+            <div class="card-foot">
+              <div class="tags">
+                <span class="tag">{post.category}</span>
+                <span class="tag">{post.readTime} min</span>
+              </div>
+              <span
+                class="apple"
+                role="button"
+                tabindex="0"
+                aria-label="Share this article"
+                data-title={post.title}
+                data-desc={post.description}
+                data-url={`https://uxintoax.com/blog/${post.slug}`}
+              >🍏</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Modal -->
+  <div id="share-modal" class="sm-overlay" hidden aria-modal="true" role="dialog" aria-label="Share article">
+    <div class="sm-box">
+      <button class="sm-close" id="sm-close" aria-label="Close">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <line x1="1" y1="1" x2="12" y2="12"/><line x1="12" y1="1" x2="1" y2="12"/>
+        </svg>
+      </button>
+      <div class="sm-preview">
+        <p class="sm-preview-site">uxintoax.com</p>
+        <p class="sm-preview-title" id="sm-title"></p>
+        <p class="sm-preview-desc" id="sm-desc"></p>
+      </div>
+      <p class="sm-share-label">Share on</p>
+      <div class="sm-buttons">
+        <a id="sm-linkedin" class="sm-btn sm-btn--li" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a id="sm-x" class="sm-btn sm-btn--x" target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X
+        </a>
+        <a id="sm-fb" class="sm-btn sm-btn--fb" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a id="sm-reddit" class="sm-btn sm-btn--rd" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+          Reddit
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modal   = document.getElementById('share-modal') as HTMLElement | null;
+    const smTitle = document.getElementById('sm-title');
+    const smDesc  = document.getElementById('sm-desc');
+    const smClose = document.getElementById('sm-close');
+
+    function openShare(title: string, desc: string, url: string) {
+      if (!modal || !smTitle || !smDesc) return;
+      smTitle.textContent = title;
+      smDesc.textContent  = desc;
+      const enc      = encodeURIComponent(url);
+      const encTitle = encodeURIComponent(title);
+      (document.getElementById('sm-linkedin') as HTMLAnchorElement).href =
+        `https://linkedin.com/sharing/share-offsite/?url=${enc}`;
+      (document.getElementById('sm-x') as HTMLAnchorElement).href =
+        `https://twitter.com/intent/tweet?url=${enc}&text=${encTitle}`;
+      (document.getElementById('sm-fb') as HTMLAnchorElement).href =
+        `https://www.facebook.com/sharer/sharer.php?u=${enc}`;
+      (document.getElementById('sm-reddit') as HTMLAnchorElement).href =
+        `https://reddit.com/submit?url=${enc}&title=${encTitle}`;
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeShare() {
+      if (!modal) return;
+      modal.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll<HTMLElement>('.apple').forEach(el => {
+      const trigger = (e: Event) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openShare(el.dataset.title ?? '', el.dataset.desc ?? '', el.dataset.url ?? '');
+      };
+      el.addEventListener('click', trigger);
+      el.addEventListener('keydown', (e: KeyboardEvent) => {
+        if (e.key === 'Enter' || e.key === ' ') trigger(e);
+      });
+    });
+
+    smClose?.addEventListener('click', closeShare);
+    modal?.addEventListener('click', e => { if (e.target === modal) closeShare(); });
+    document.addEventListener('keydown', (e: KeyboardEvent) => { if (e.key === 'Escape') closeShare(); });
+  </script>
+
+  <Footer />
+</Base>

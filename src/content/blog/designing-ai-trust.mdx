@@ -1,0 +1,47 @@
+---
+title: "Designing Trust in AI Systems: The UX Framework"
+slug: "designing-ai-trust"
+description: "Trust is not a feeling — it's a design property. How you build, maintain, and repair trust in AI products determines whether users stay or leave after the first mistake."
+category: "Craft"
+author: "uxintoax"
+publishedAt: "2025-03-05"
+readTime: 8
+featured: false
+faqs:
+  - q: "What's the difference between trustworthy design and dark patterns in AI?"
+    a: "Trustworthy design earns confidence by being accurate, transparent about limitations, and recoverable after errors. Dark patterns manufacture false confidence — hiding uncertainty, suppressing failure states, or making errors hard to notice. The line is whether the design serves the user's accurate understanding."
+  - q: "How do I design for trust repair after an AI makes a mistake?"
+    a: "Acknowledge the error explicitly in the product — don't just replace the output silently. Explain what went wrong at the appropriate level of detail. Give the user agency to correct or redirect. Mistakes handled well build more trust than products that never appear to fail."
+---
+
+Every AI product will fail its users at some point. The question is not whether, but how — and whether your design allows trust to survive the failure.
+
+Trust in AI systems is not about making users believe the system is infallible. It's about calibrating their confidence accurately so they rely on the system appropriately and recover gracefully when it falls short.
+
+## Trust is multi-dimensional
+
+When users trust an AI system, they're trusting several different things simultaneously:
+
+**Competence trust** — Does the system do what it claims to do, reliably? This is built through consistent, accurate performance over time. It's damaged by visible errors.
+
+**Predictability trust** — Does the system behave consistently? Users develop routines with AI products. Unpredictable behavior breaks those routines and forces re-evaluation.
+
+**Intent trust** — Does the system serve my interests, or someone else's? This is where design decisions around data use, recommendations, and nudges become trust decisions.
+
+**Boundary trust** — Does the system stay within appropriate scope? An agent that exceeds its mandate — even helpfully — triggers alarm.
+
+## The calibration imperative
+
+Over-trust is as dangerous as under-trust. Users who trust an AI too much stop verifying outputs that deserve verification. They delegate decisions the system isn't qualified to make. They miss errors that compound.
+
+Your design goal is calibrated trust: users should trust the AI exactly as much as its actual reliability warrants, in the domains where that reliability holds.
+
+Confidence signals — progress indicators, certainty expressions, source attribution — are calibration tools. Use them deliberately.
+
+## Designing for failure
+
+The most important trust design work happens in edge cases: what does your system show when it doesn't know the answer? When it's operating outside its training? When a tool call fails?
+
+Confident-but-wrong is the worst failure mode. Design your system to surface uncertainty clearly, suggest when the user should verify independently, and make it easy to report errors and try again.
+
+Recovery flows are not error handling — they're trust-building moments. A system that handles failure gracefully earns more trust than one that never appears to fail.

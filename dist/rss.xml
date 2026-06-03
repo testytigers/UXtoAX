@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>uxintoax.com — Agent Experience Design Blog</title>
+    <link>https://uxintoax.com/</link>
+    <description>Articles for UX designers navigating the AI era.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jun 2026 16:01:25 GMT</lastBuildDate>
+    <atom:link href="https://uxintoax.com/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://uxintoax.com/og/default.svg</url>
+      <title>uxintoax.com</title>
+      <link>https://uxintoax.com/</link>
+    </image>
+    
+  <item>
+    <title><![CDATA[What AX Designers Actually Do]]></title>
+    <link>https://uxintoax.com/blog/what-ax-designers-do/</link>
+    <description><![CDATA[A clear breakdown of the Agent Experience designer role — responsibilities, outputs, and how it differs from traditional UX work day-to-day.]]></description>
+    <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/what-ax-designers-do/</guid>
+    <category>AX Fundamentals</category>
+  </item>
+  <item>
+    <title><![CDATA[The UX to AX Transition: A Practical Guide]]></title>
+    <link>https://uxintoax.com/blog/ux-to-ax-transition-guide/</link>
+    <description><![CDATA[How to move from UX design to Agent Experience design — what skills transfer, what you need to build, and the fastest path to landing your first AX role.]]></description>
+    <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/ux-to-ax-transition-guide/</guid>
+    <category>Career</category>
+  </item>
+  <item>
+    <title><![CDATA[The Agentic Designer's Toolkit: What Replaces Figma]]></title>
+    <link>https://uxintoax.com/blog/agentic-designer-toolkit/</link>
+    <description><![CDATA[Figma isn't going away, but it's no longer the center of the design workflow. Here's what agentic designers are actually using to design AI behavior, and why the tooling shift matters.]]></description>
+    <pubDate>Wed, 14 May 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/agentic-designer-toolkit/</guid>
+    <category>Craft</category>
+  </item>
+  <item>
+    <title><![CDATA[Top AI Tools for UX Designers in 2025]]></title>
+    <link>https://uxintoax.com/blog/top-ai-tools-for-ux-designers-2025/</link>
+    <description><![CDATA[The AI tools that are actually changing how UX designers work — from research synthesis to prototyping to AX design. No hype, just what's useful.]]></description>
+    <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/top-ai-tools-for-ux-designers-2025/</guid>
+    <category>Tools & Workflow</category>
+  </item>
+  <item>
+    <title><![CDATA[UX Jobs in 2025: Which Roles Are Actually Growing]]></title>
+    <link>https://uxintoax.com/blog/ux-jobs-2025/</link>
+    <description><![CDATA[The UX job market is bifurcating. Some roles are contracting while others are expanding rapidly. Here's where the growth is, what's declining, and how to position yourself for what's coming.]]></description>
+    <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/ux-jobs-2025/</guid>
+    <category>Career</category>
+  </item>
+  <item>
+    <title><![CDATA[Conversation Design Fundamentals for UX Designers]]></title>
+    <link>https://uxintoax.com/blog/conversation-design-fundamentals/</link>
+    <description><![CDATA[Conversation design is not copywriting. It's a design discipline with its own principles, methods, and failure modes. Here's what every UX designer moving into AI needs to know.]]></description>
+    <pubDate>Mon, 28 Apr 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/conversation-design-fundamentals/</guid>
+    <category>Craft</category>
+  </item>
+  <item>
+    <title><![CDATA[AI Agent Failure States: Designing for When Things Go Wrong]]></title>
+    <link>https://uxintoax.com/blog/designing-failure-states/</link>
+    <description><![CDATA[Failure states in agentic systems are more complex and consequential than in traditional UX. Here's how to systematically identify, classify, and design for them.]]></description>
+    <pubDate>Tue, 15 Apr 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/designing-failure-states/</guid>
+    <category>Craft</category>
+  </item>
+  <item>
+    <title><![CDATA[AX Portfolio: How to Show Agent Experience Work]]></title>
+    <link>https://uxintoax.com/blog/ax-portfolio-guide/</link>
+    <description><![CDATA[Hiring managers evaluating AX designers don't know what good looks like yet. Here's how to build a portfolio that demonstrates agent design thinking before the industry standardizes its expectations.]]></description>
+    <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/ax-portfolio-guide/</guid>
+    <category>Career</category>
+  </item>
+  <item>
+    <title><![CDATA[Designing Trust in AI Systems: The UX Framework]]></title>
+    <link>https://uxintoax.com/blog/designing-ai-trust/</link>
+    <description><![CDATA[Trust is not a feeling — it's a design property. How you build, maintain, and repair trust in AI products determines whether users stay or leave after the first mistake.]]></description>
+    <pubDate>Wed, 05 Mar 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/designing-ai-trust/</guid>
+    <category>Craft</category>
+  </item>
+  <item>
+    <title><![CDATA[Mental Models for AI: How Users Actually Think About Agents]]></title>
+    <link>https://uxintoax.com/blog/mental-models-for-ai/</link>
+    <description><![CDATA[Users develop wildly inaccurate mental models of AI systems. Understanding the most common patterns — and designing for them — is one of the highest-leverage UX skills in the agentic era.]]></description>
+    <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/mental-models-for-ai/</guid>
+    <category>Research</category>
+  </item>
+  <item>
+    <title><![CDATA[The Prompt Is the Interface: Designing for AI Input]]></title>
+    <link>https://uxintoax.com/blog/prompt-as-interface/</link>
+    <description><![CDATA[When the prompt becomes the primary UI surface, UX designers need new frameworks for thinking about affordances, constraints, and user mental models.]]></description>
+    <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/prompt-as-interface/</guid>
+    <category>Craft</category>
+  </item>
+  <item>
+    <title><![CDATA[What Is Agentic Design? A UX Designer's Introduction]]></title>
+    <link>https://uxintoax.com/blog/what-is-agentic-design/</link>
+    <description><![CDATA[Agentic design is the discipline of shaping how AI agents perceive, decide, and act on behalf of users. Here's what it means and why UX designers are uniquely positioned for it.]]></description>
+    <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://uxintoax.com/blog/what-is-agentic-design/</guid>
+    <category>Foundations</category>
+  </item>
+  </channel>
+</rss>

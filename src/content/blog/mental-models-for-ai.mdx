@@ -1,0 +1,43 @@
+---
+title: "Mental Models for AI: How Users Actually Think About Agents"
+slug: "mental-models-for-ai"
+description: "Users develop wildly inaccurate mental models of AI systems. Understanding the most common patterns — and designing for them — is one of the highest-leverage UX skills in the agentic era."
+category: "Research"
+author: "uxintoax"
+publishedAt: "2025-02-18"
+readTime: 6
+featured: false
+faqs:
+  - q: "How do I research users' AI mental models?"
+    a: "Use wizard-of-oz studies, think-aloud sessions, and retrospective interviews. Ask users to predict what the AI will do before it does it — the gap between prediction and outcome reveals the mental model. Diary studies over 2–4 weeks show how models evolve with experience."
+  - q: "Should I try to correct wrong mental models?"
+    a: "Sometimes. A mental model that leads to effective use is worth keeping, even if technically inaccurate. Prioritize correcting models that lead to dangerous over-trust, privacy risks, or systematic misuse. Pedagogical friction has a cost — use it sparingly."
+---
+
+When users interact with AI, they form mental models — internal representations of what the system is, how it works, and what it can do. These models are almost always wrong. They're also completely consequential.
+
+Designing for AI means designing for the mental model, not just the capability.
+
+## The three most common mismodels
+
+**The all-knowing oracle.** Users assume the AI has access to everything they haven't explicitly blocked. They'll reference events from six months ago, assume it knows their company's internal strategy, or expect it to understand context from a meeting it didn't attend. The design implication: make context boundaries visible without making them feel like warnings.
+
+**The perfect memory model.** Users expect the AI to remember everything they've told it across sessions. When it doesn't, they feel betrayed — not technically misled, but relationally let down. Memory state should be transparent and controllable by design.
+
+**The infallible authority.** Some users assume AI outputs are correct by default and only verify when something feels obviously wrong. This is particularly dangerous in high-stakes domains. Your onboarding and output design should build skepticism as a habit, not an exception.
+
+## Why these models form
+
+Mental model formation is pattern-matching under uncertainty. Users extrapolate from things they know — the assistant who remembers their coffee order, the search engine that knows what they meant, the expert who has answers. AI triggers all these patterns simultaneously, producing a composite model that fits none of them precisely.
+
+The more the AI behaves like something familiar, the stronger the mismodel. Conversational UIs in particular prime users to apply human interaction norms that don't hold.
+
+## Designing for model calibration
+
+The goal isn't to teach users how LLMs work. The goal is to help them build a mental model that produces effective, safe use.
+
+That means:
+- **Showing reasoning**, not just output — users calibrate trust when they can see the path to the answer
+- **Transparent scope** — what this agent can and cannot access should be surfaced before users assume
+- **Graceful contradiction** — when the AI is uncertain or wrong, how it expresses that shapes how users update their model
+- **Progressive complexity** — don't expose full system capabilities on day one; let the model grow with the user

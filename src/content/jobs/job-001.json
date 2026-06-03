@@ -1,0 +1,15 @@
+{
+  "id": "job-001",
+  "title": "Senior UX Designer",
+  "company": "Meridian AI",
+  "location": "Remote (Global)",
+  "workType": "remote",
+  "experienceLevel": "senior",
+  "roleType": "ux-designer",
+  "salary": "$130,000 – $160,000",
+  "skills": ["Figma", "User Research", "Design Systems", "AI Tools", "Prototyping"],
+  "description": "Shape the user experience for Meridian's AI-powered enterprise platform. You'll own end-to-end design for agent-assisted workflows used by 50,000+ knowledge workers, driving clarity and trust in complex AI interactions.",
+  "applyUrl": "https://jobs.ashbyhq.com",
+  "postedAt": "2025-05-27",
+  "featured": true
+}

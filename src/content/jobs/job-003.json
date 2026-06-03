@@ -1,0 +1,15 @@
+{
+  "id": "job-003",
+  "title": "AX Designer",
+  "company": "Vanta Systems",
+  "location": "London, UK",
+  "workType": "hybrid",
+  "experienceLevel": "mid",
+  "roleType": "ax-designer",
+  "salary": "£70,000 – £90,000",
+  "skills": ["AX Design", "Conversation Design", "Figma", "Prompt Engineering", "User Research"],
+  "description": "Vanta Systems is building the next generation of enterprise AI agents. As AX Designer, you'll own the end-to-end design of how users interact with, delegate to, and correct autonomous agents across our platform.",
+  "applyUrl": "https://vantasystems.io/jobs",
+  "postedAt": "2025-05-24",
+  "featured": true
+}

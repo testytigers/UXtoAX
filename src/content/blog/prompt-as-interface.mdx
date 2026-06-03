@@ -1,0 +1,48 @@
+---
+title: "The Prompt Is the Interface: Designing for AI Input"
+slug: "prompt-as-interface"
+description: "When the prompt becomes the primary UI surface, UX designers need new frameworks for thinking about affordances, constraints, and user mental models."
+category: "Craft"
+author: "uxintoax"
+publishedAt: "2025-02-01"
+readTime: 7
+featured: false
+faqs:
+  - q: "Should I design prompt templates for users?"
+    a: "Often yes — but carefully. Pre-filled templates lower the barrier to entry but can constrain user expression. The best approach is progressive disclosure: show examples, allow free input, and offer structured templates only when users get stuck."
+  - q: "How do I test prompt interfaces with real users?"
+    a: "Run think-aloud sessions where users interact with the AI live. Pay attention to what they expect the system to understand, what they're afraid to ask, and how they recover when the output doesn't match intent. The gap between user mental model and system capability is your primary design problem."
+---
+
+A text box is not a neutral container. When you put a blinking cursor in front of a user and tell them to talk to an AI, you've made a design decision that carries enormous assumptions about what they know, what they want, and what the system can do.
+
+Prompt design is interface design. Treating it as an afterthought is a mistake.
+
+## The blank canvas problem
+
+Empty text inputs are cognitively expensive. When a user opens a new document, the blankness is the point — they have something to say. When they open an AI interface, the blankness is a question: what am I supposed to ask?
+
+This is why prompt design matters. Your job is to reduce the uncertainty of that moment without constraining the user's range of expression.
+
+## Affordances in a text interface
+
+Physical interfaces have affordances — a button looks pressable, a slider looks draggable. Text interfaces have to create affordances through language and context.
+
+The placeholder text in an input is an affordance. It sets expectations about what's possible. "Ask me anything" is almost useless. "Describe the meeting outcome you want — I'll draft the follow-up email" is a design decision. It tells the user what the system is for, what format will work, and what they'll get back.
+
+## Mental model gaps are UX problems
+
+The hardest problem in AI interface design is the gap between what users think the system understands and what it actually processes. Users frequently over-attribute comprehension — they assume the AI remembers context it doesn't have, understands irony it can't detect, or infers intent that wasn't stated.
+
+Designing for this means:
+
+- Making context windows visible where relevant
+- Showing the system's interpretation before it acts
+- Building explicit confirmation steps for consequential actions
+- Designing graceful recovery when output doesn't match intent
+
+## The feedback loop as design surface
+
+In a traditional UI, the path from user action to system response is defined. In an AI interface, the path is probabilistic. The user's prompt was one of millions of possible inputs; the output is one of millions of possible responses.
+
+This makes the feedback loop — the moment where the user evaluates the output and decides whether to iterate — a primary design surface. How you design the edit-and-retry experience determines whether your AI product feels magical or frustrating.
