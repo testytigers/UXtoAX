@@ -1,0 +1,1046 @@
+{
+  "project": "uxintoax.com",
+  "lastUpdated": "2026-06-05T00:33:45.788073",
+  "currentPhase": "phase4",
+  "currentTask": "A-70",
+  "totalTasks": 113,
+  "completedCount": 113,
+  "inProgress": null,
+  "tasks": {
+    "F-01": {
+      "phase": "foundation",
+      "title": "Build the Master Style Guide",
+      "type": "document",
+      "status": "completed",
+      "outputPath": "docs/STYLE_GUIDE.md",
+      "completedAt": "2026-06-03T21:05:11.527392"
+    },
+    "F-02": {
+      "phase": "foundation",
+      "title": "Build the Content Brief Template",
+      "type": "template",
+      "status": "completed",
+      "outputPath": "docs/CONTENT_BRIEF_TEMPLATE.md",
+      "completedAt": "2026-06-03T21:37:40.752853"
+    },
+    "F-03": {
+      "phase": "foundation",
+      "title": "Write the /what-is-ax Pillar Page",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/what-is-ax.mdx",
+      "completedAt": "2026-06-03T21:44:56.101445"
+    },
+    "F-04": {
+      "phase": "foundation",
+      "title": "Write 5 Seed Job Listings",
+      "type": "json",
+      "status": "completed",
+      "outputPath": "content/jobs/",
+      "completedAt": "2026-06-03T21:53:06.994015"
+    },
+    "F-05": {
+      "phase": "foundation",
+      "title": "Populate skills.json with Real Data",
+      "type": "json",
+      "status": "completed",
+      "outputPath": "content/skills/skills.json",
+      "completedAt": "2026-06-03T21:59:04.330619"
+    },
+    "A-01": {
+      "phase": "phase1",
+      "title": "What is Agent Experience Design? The Complete Definition",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-01-what-is-agent-experience-design.mdx",
+      "completedAt": "2026-06-03T22:03:48.545964"
+    },
+    "A-02": {
+      "phase": "phase1",
+      "title": "Agent Experience vs UX Design: What's Actually Different?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-02-agent-experience-vs-ux-design.mdx",
+      "completedAt": "2026-06-03T22:11:30.601266"
+    },
+    "A-03": {
+      "phase": "phase1",
+      "title": "What is Agentic AI? A Plain-English Guide for Designers",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-03-what-is-agentic-ai.mdx",
+      "completedAt": "2026-06-03T22:11:30.601266"
+    },
+    "A-04": {
+      "phase": "phase1",
+      "title": "What Does an AX Designer Actually Do? (Role Breakdown)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-04-what-does-an-ax-designer-do.mdx",
+      "completedAt": "2026-06-03T22:37:41.134072"
+    },
+    "A-05": {
+      "phase": "phase1",
+      "title": "Is UX Design Being Replaced by AI? The Honest Answer",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-05-is-ux-design-being-replaced-by-ai.mdx",
+      "completedAt": "2026-06-03T22:37:41.134072"
+    },
+    "A-06": {
+      "phase": "phase1",
+      "title": "What is Prompt Design? And Why UX Designers Should Care",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-06-what-is-prompt-design.mdx",
+      "completedAt": "2026-06-03T22:46:41.012095"
+    },
+    "A-07": {
+      "phase": "phase1",
+      "title": "What is Conversation Design? A Guide for UX Designers",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-07-what-is-conversation-design.mdx",
+      "completedAt": "2026-06-03T22:46:41.012095"
+    },
+    "A-08": {
+      "phase": "phase1",
+      "title": "UX Designer vs AI Product Designer: What's the Difference?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-08-ux-designer-vs-ai-product-designer.mdx",
+      "completedAt": "2026-06-03T23:12:04.059016"
+    },
+    "A-09": {
+      "phase": "phase1",
+      "title": "What is Human-Agent Interaction? The Designer's Guide",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-09-human-agent-interaction.mdx",
+      "completedAt": "2026-06-03T23:12:04.059016"
+    },
+    "A-10": {
+      "phase": "phase1",
+      "title": "How to Become an AX Designer in 2025 (Step-by-Step)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-10-how-to-become-an-ax-designer.mdx",
+      "completedAt": "2026-06-03T23:17:33.596293"
+    },
+    "A-11": {
+      "phase": "phase2",
+      "title": "Will AI Replace UX Designers? The Data-Driven Answer (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-11-will-ai-replace-ux-designers.mdx",
+      "completedAt": "2026-06-04T00:59:31.233199",
+      "wordCount": 2500
+    },
+    "A-12": {
+      "phase": "phase2",
+      "title": "The Complete UX to AX Career Transition Guide (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-12-ux-to-ax-career-transition-guide.mdx",
+      "completedAt": "2026-06-04T01:05:14.434588",
+      "wordCount": 3000
+    },
+    "A-13": {
+      "phase": "phase2",
+      "title": "The Best AI Tools for UX Designers in 2025 (Tested & Ranked)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-13-best-ai-tools-for-ux-designers.mdx",
+      "completedAt": "2026-06-04T10:36:16.470869",
+      "wordCount": 2400
+    },
+    "A-14": {
+      "phase": "phase2",
+      "title": "Top UX Design Skills Employers Want in 2025 (Data Analysis)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-14-top-ux-design-skills-employers-want-2025.mdx",
+      "completedAt": "2026-06-04T01:18:46.716600",
+      "wordCount": 2000
+    },
+    "A-15": {
+      "phase": "phase2",
+      "title": "The Future of UX Design: 10 Predictions for 2025-2030",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-15-future-of-ux-design-10-predictions-2025.mdx",
+      "completedAt": "2026-06-04T01:18:46.716600",
+      "wordCount": 2500
+    },
+    "A-16": {
+      "phase": "phase3",
+      "title": "Figma AI: The UX Designer's Honest Review (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-16-figma-ai-features-review-2025.mdx",
+      "completedAt": "2026-06-04T01:22:40.845461",
+      "wordCount": 1400
+    },
+    "A-17": {
+      "phase": "phase3",
+      "title": "Claude for UX Designers: The Complete Guide (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-17-claude-for-ux-designers-complete-guide.mdx",
+      "completedAt": "2026-06-04T01:26:56.768006",
+      "wordCount": 1500
+    },
+    "A-18": {
+      "phase": "phase3",
+      "title": "Midjourney for UX: How to Use It in Real Projects (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-18-midjourney-for-ux-how-to-use-it-in-real-projects.mdx",
+      "completedAt": "2026-06-04T01:31:43.003176",
+      "wordCount": 1400
+    },
+    "A-19": {
+      "phase": "phase3",
+      "title": "Framer AI vs Webflow: Which is Better for Designers in 2025?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-19-framer-ai-vs-webflow-which-is-better-for-designers.mdx",
+      "completedAt": "2026-06-04T01:35:20.412476",
+      "wordCount": 1400
+    },
+    "A-20": {
+      "phase": "phase3",
+      "title": "Maze vs UserTesting: AI-Powered Research Tools Compared (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-20-maze-vs-usertesting-ai-powered-research-tools.mdx",
+      "completedAt": "2026-06-04T01:38:46.428858",
+      "wordCount": 1300
+    },
+    "A-21": {
+      "phase": "phase3",
+      "title": "Notion AI for UX Documentation: The Honest Review (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-21-notion-ai-for-ux-documentation-review.mdx",
+      "completedAt": "2026-06-04T01:42:29.624580",
+      "wordCount": 1400
+    },
+    "A-22": {
+      "phase": "phase3",
+      "title": "GitHub Copilot for Designers Who Code: The Honest Review (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-22-github-copilot-for-designers-who-code-review.mdx",
+      "completedAt": "2026-06-04T02:04:36.056752",
+      "wordCount": 1300
+    },
+    "A-23": {
+      "phase": "phase3",
+      "title": "Uizard Review: Can AI Really Generate Wireframes? (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-23-uizard-ai-wireframe-generation-review.mdx",
+      "completedAt": "2026-06-04T02:08:06.537020",
+      "wordCount": 1300
+    },
+    "A-24": {
+      "phase": "phase3",
+      "title": "ChatGPT for UX Research: Prompts That Actually Work (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-24-chatgpt-for-ux-research-prompts.mdx",
+      "completedAt": "2026-06-04T02:20:43.555540",
+      "wordCount": 1300
+    },
+    "A-25": {
+      "phase": "phase3",
+      "title": "Attention Insight Review: AI Heatmaps Before You Launch (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-25-attention-insight-ai-heatmaps-review.mdx",
+      "completedAt": "2026-06-04T02:23:48.832764",
+      "wordCount": 1200
+    },
+    "A-26": {
+      "phase": "phase4",
+      "title": "AX Designer Salary in 2025: What You Can Actually Earn",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-26-ax-designer-salary-2025-guide.mdx",
+      "completedAt": "2026-06-04T02:27:25.010534",
+      "wordCount": 1200
+    },
+    "A-27": {
+      "phase": "phase4",
+      "title": "UX Designer Salary in the AI Era: How Much More Can You Earn?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-27-ux-designer-salary-ai-era.mdx",
+      "completedAt": "2026-06-04T02:36:32.386099",
+      "wordCount": 1100
+    },
+    "A-28": {
+      "phase": "phase4",
+      "title": "How to Redesign Your UX Portfolio for the AX Era",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-28-redesign-ux-portfolio-ax-era.mdx",
+      "completedAt": "2026-06-04T02:39:08.369205",
+      "wordCount": 1400
+    },
+    "A-29": {
+      "phase": "phase4",
+      "title": "How to Write a LinkedIn Profile as an AX Designer",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-29-linkedin-profile-ax-designer.mdx",
+      "completedAt": "2026-06-04T02:41:42.870452",
+      "wordCount": 1200
+    },
+    "A-30": {
+      "phase": "phase4",
+      "title": "UX Designer Interview Questions for AI Companies (2025)",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-30-ux-designer-interview-questions-ai-companies.mdx",
+      "completedAt": "2026-06-04T03:04:16.094793",
+      "wordCount": 1500
+    },
+    "A-31": {
+      "phase": "phase4",
+      "title": "How to Get Your First AX Design Job With No Experience",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-31-first-ax-job-no-experience.mdx",
+      "completedAt": "2026-06-04T11:04:48.972066",
+      "wordCount": 1100
+    },
+    "A-32": {
+      "phase": "phase4",
+      "title": "Remote UX Design Jobs: Where to Find the Best Ones in 2025",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-32-remote-ux-jobs.mdx",
+      "completedAt": "2026-06-04T11:10:09.542576",
+      "wordCount": 1800
+    },
+    "A-33": {
+      "phase": "phase4",
+      "title": "From Junior to Senior UX Designer in the AI Era",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-33-junior-to-senior-ux.mdx",
+      "completedAt": "2026-06-04T12:31:36.890551",
+      "wordCount": 2100
+    },
+    "A-34": {
+      "phase": "phase4",
+      "title": "Freelance UX Designer in 2025: How AI Changes Everything",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-34-freelance-ux-ai.mdx",
+      "completedAt": "2026-06-04T12:31:36.890556",
+      "wordCount": 2000
+    },
+    "A-35": {
+      "phase": "phase4",
+      "title": "UX Designer CV Template for AI-Era Jobs",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-35-ux-cv-template.mdx",
+      "completedAt": "2026-06-04T12:31:36.890557",
+      "wordCount": 1500
+    },
+    "A-36": {
+      "phase": "phase5",
+      "title": "How ChatGPT's Interface Is Actually Terrible UX",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-36-chatgpt-ux-teardown.mdx",
+      "completedAt": "2026-06-04T13:01:57.983229",
+      "wordCount": 1400
+    },
+    "A-37": {
+      "phase": "phase5",
+      "title": "Perplexity AI UX Teardown",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-37-perplexity-ux-teardown.mdx",
+      "completedAt": "2026-06-04T13:01:57.983241",
+      "wordCount": 1500
+    },
+    "A-38": {
+      "phase": "phase5",
+      "title": "Claude vs ChatGPT: A UX Designer's Interface Comparison",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-38-claude-vs-chatgpt-ux.mdx",
+      "completedAt": "2026-06-04T13:01:57.983245",
+      "wordCount": 1300
+    },
+    "A-39": {
+      "phase": "phase5",
+      "title": "How Notion AI Was Integrated Without Ruining the UX",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-39-notion-ai-ux-case-study.mdx",
+      "completedAt": "2026-06-04T13:01:57.983247",
+      "wordCount": 1200
+    },
+    "A-40": {
+      "phase": "phase5",
+      "title": "Apple Intelligence UX: What Designers Can Learn",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-40-apple-intelligence-ux.mdx",
+      "completedAt": "2026-06-04T13:41:56.073128",
+      "wordCount": 1300
+    },
+    "A-41": {
+      "phase": "phase5",
+      "title": "Linear UI Teardown: Designed for Humans, Not Algorithms",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-41-linear-ui-teardown.mdx",
+      "completedAt": "2026-06-04T13:41:56.073133",
+      "wordCount": 1200
+    },
+    "A-42": {
+      "phase": "phase5",
+      "title": "Designing an AI Onboarding Flow: 5 Real Examples",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-42-ai-onboarding-flow.mdx",
+      "completedAt": "2026-06-04T13:41:56.073135",
+      "wordCount": 1400
+    },
+    "A-43": {
+      "phase": "phase5",
+      "title": "Error Messages in AI Products: Who Gets It Right",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-43-ai-error-messages-ux.mdx",
+      "completedAt": "2026-06-04T13:41:56.073136",
+      "wordCount": 1100
+    },
+    "A-44": {
+      "phase": "phase5",
+      "title": "How Figma Handles AI Feature Integration",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-44-figma-ai-ux-audit.mdx",
+      "completedAt": "2026-06-04T13:41:56.073137",
+      "wordCount": 1000
+    },
+    "A-45": {
+      "phase": "phase5",
+      "title": "Copilot in Microsoft 365: A UX Designer's Review",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-45-microsoft-copilot-ux-review.mdx",
+      "completedAt": "2026-06-04T13:41:56.073138",
+      "wordCount": 1000
+    },
+    "A-46": {
+      "phase": "phase6",
+      "title": "The AX Designer Skill Stack: Everything You Need in 2025",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-46-ax-skill-stack.mdx",
+      "completedAt": "2026-06-04T14:14:57.792529",
+      "wordCount": 1200
+    },
+    "A-47": {
+      "phase": "phase6",
+      "title": "Prompt Design 101: The UX Designer's Starter Guide",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-47-prompt-design-101.mdx",
+      "completedAt": "2026-06-04T14:14:57.792535",
+      "wordCount": 1200
+    },
+    "A-48": {
+      "phase": "phase6",
+      "title": "How to Learn AI Without a Tech Background",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-48-learn-ai-for-designers.mdx",
+      "completedAt": "2026-06-04T14:14:57.792536",
+      "wordCount": 900
+    },
+    "A-49": {
+      "phase": "phase6",
+      "title": "Design Systems in the AI Era",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-49-design-systems-ai-era.mdx",
+      "completedAt": "2026-06-04T14:14:57.792538",
+      "wordCount": 1000
+    },
+    "A-50": {
+      "phase": "phase6",
+      "title": "UX Research in 2025: How AI Is Changing the Process",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-50-ux-research-ai.mdx",
+      "completedAt": "2026-06-04T14:14:57.792540",
+      "wordCount": 1100
+    },
+    "A-51": {
+      "phase": "phase6",
+      "title": "Information Architecture for AI Products",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-51-ia-ai-products.mdx",
+      "completedAt": "2026-06-04T14:14:57.792542",
+      "wordCount": 1000
+    },
+    "A-52": {
+      "phase": "phase6",
+      "title": "Accessibility in AI Interfaces",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-52-ai-accessibility.mdx",
+      "completedAt": "2026-06-04T14:14:57.792543",
+      "wordCount": 1000
+    },
+    "A-53": {
+      "phase": "phase6",
+      "title": "How to Write UX Copy for AI Products",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-53-ux-copy-ai.mdx",
+      "completedAt": "2026-06-04T14:14:57.792544",
+      "wordCount": 900
+    },
+    "A-54": {
+      "phase": "phase6",
+      "title": "Motion Design for AI Interfaces",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-54-motion-design-ai.mdx",
+      "completedAt": "2026-06-04T14:14:57.792545",
+      "wordCount": 900
+    },
+    "A-55": {
+      "phase": "phase6",
+      "title": "Data Visualization for Non-Data Designers",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-55-data-viz-for-designers.mdx",
+      "completedAt": "2026-06-04T14:14:57.792547",
+      "wordCount": 800
+    },
+    "A-56": {
+      "phase": "phase7",
+      "title": "UX Design Job Market Report: Q2 2025 Data Analysis",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-56-job-market-q2-2025.mdx",
+      "completedAt": "2026-06-04T14:29:54.588836",
+      "wordCount": 1000
+    },
+    "A-57": {
+      "phase": "phase7",
+      "title": "Most In-Demand UX Skills: June 2025 Data",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-57-top-skills-june-2025.mdx",
+      "completedAt": "2026-06-04T14:29:54.588841",
+      "wordCount": 900
+    },
+    "A-58": {
+      "phase": "phase7",
+      "title": "AX Designer Salary Report 2025: Global Data",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-58-ax-salary-global-2025.mdx",
+      "completedAt": "2026-06-04T14:29:54.588842",
+      "wordCount": 700
+    },
+    "A-59": {
+      "phase": "phase7",
+      "title": "Remote UX Jobs vs On-Site: What the Data Says in 2025",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-59-remote-vs-onsite-data.mdx",
+      "completedAt": "2026-06-04T14:29:54.588843",
+      "wordCount": 800
+    },
+    "A-60": {
+      "phase": "phase7",
+      "title": "Which Cities Are Hiring the Most UX Designers?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-60-ux-jobs-by-city.mdx",
+      "completedAt": "2026-06-04T14:29:54.588844",
+      "wordCount": 800
+    },
+    "A-61": {
+      "phase": "phase8",
+      "title": "The 5 Principles of Agent Experience Design",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-61-ax-principles.mdx",
+      "completedAt": "2026-06-04T15:04:50.690992",
+      "wordCount": 1200
+    },
+    "A-62": {
+      "phase": "phase8",
+      "title": "Agent Behavior Design",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-62-agent-behavior-design.mdx",
+      "completedAt": "2026-06-04T15:04:50.690996",
+      "wordCount": 900
+    },
+    "A-63": {
+      "phase": "phase8",
+      "title": "Trust Design for AI Products",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-63-trust-design-ai.mdx",
+      "completedAt": "2026-06-04T15:04:50.690997",
+      "wordCount": 800
+    },
+    "A-64": {
+      "phase": "phase8",
+      "title": "Designing for AI Uncertainty",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-64-ai-uncertainty.mdx",
+      "completedAt": "2026-06-04T15:04:50.690998",
+      "wordCount": 700
+    },
+    "A-65": {
+      "phase": "phase8",
+      "title": "The AX Design Process",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-65-ax-design-process.mdx",
+      "completedAt": "2026-06-04T15:04:50.690999",
+      "wordCount": 800
+    },
+    "A-66": {
+      "phase": "phase8",
+      "title": "Designing AI Agent Personas",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-66-ai-agent-personas.mdx",
+      "completedAt": "2026-06-04T15:04:50.691000",
+      "wordCount": 600
+    },
+    "A-67": {
+      "phase": "phase8",
+      "title": "The Ethics of AX Design",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-67-ax-design-ethics.mdx",
+      "completedAt": "2026-06-04T15:04:50.691001",
+      "wordCount": 700
+    },
+    "A-68": {
+      "phase": "phase8",
+      "title": "Feedback Loops in Agent Interfaces",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-68-feedback-loops-ai.mdx",
+      "completedAt": "2026-06-04T15:04:50.691002",
+      "wordCount": 600
+    },
+    "A-69": {
+      "phase": "phase8",
+      "title": "Multimodal UX: Voice, Text, and Vision Agents",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-69-multimodal-ux.mdx",
+      "completedAt": "2026-06-04T15:04:50.691003",
+      "wordCount": 600
+    },
+    "A-70": {
+      "phase": "phase8",
+      "title": "The AX Design Manifesto",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-70-ax-design-manifesto.mdx",
+      "completedAt": "2026-06-04T15:04:50.691004",
+      "wordCount": 600
+    },
+    "A-71": {
+      "phase": "phase9",
+      "title": "UX Designer vs Product Designer: Which Role Has More AI Upside?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-71-ux-vs-product-designer.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-72": {
+      "phase": "phase9",
+      "title": "Figma vs Framer in 2025",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-72-figma-vs-framer.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-73": {
+      "phase": "phase9",
+      "title": "ChatGPT vs Claude for UX Work",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-73-chatgpt-vs-claude-ux.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-74": {
+      "phase": "phase9",
+      "title": "UX Bootcamp vs Self-Taught for AX",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-74-bootcamp-vs-self-taught.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-75": {
+      "phase": "phase9",
+      "title": "Figma vs Sketch vs Adobe XD in 2025?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-75-figma-vs-sketch-vs-xd.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-76": {
+      "phase": "phase9",
+      "title": "UX Research vs UX Design: Which Career Has More AI Upside?",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-76-research-vs-design.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-77": {
+      "phase": "phase9",
+      "title": "Agency UX vs In-House UX",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-77-agency-vs-inhouse.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-78": {
+      "phase": "phase9",
+      "title": "Startup UX vs Enterprise UX",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-78-startup-vs-enterprise.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-79": {
+      "phase": "phase9",
+      "title": "Notion vs Linear for UX Team PM",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-79-notion-vs-linear.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-80": {
+      "phase": "phase9",
+      "title": "Maze vs Hotjar vs FullStory",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-80-maze-vs-hotjar-vs-fullstory.mdx",
+      "completedAt": "2026-06-04T23:21:48.011179",
+      "wordCount": 1500
+    },
+    "A-81": {
+      "phase": "phase10",
+      "title": "10 UX Design Trends That AI Is Accelerating in 2025",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-81-ux-trends-ai-2025.mdx",
+      "completedAt": "2026-06-04T23:31:28.728864",
+      "wordCount": 1500
+    },
+    "A-82": {
+      "phase": "phase10",
+      "title": "15 AI Prompts Every UX Designer Should Save",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-82-ai-prompts-ux.mdx",
+      "completedAt": "2026-06-04T23:31:28.728864",
+      "wordCount": 1500
+    },
+    "A-83": {
+      "phase": "phase10",
+      "title": "10 Signs Your UX Career Is Ready for the AX Transition",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-83-signs-ax-ready.mdx",
+      "completedAt": "2026-06-04T23:31:28.728864",
+      "wordCount": 1500
+    },
+    "A-84": {
+      "phase": "phase10",
+      "title": "7 UX Design Patterns That Break in AI Interfaces",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-84-ux-patterns-break-ai.mdx",
+      "completedAt": "2026-06-04T23:31:28.728864",
+      "wordCount": 1500
+    },
+    "A-85": {
+      "phase": "phase10",
+      "title": "12 Free AI Tools UX Designers Should Know About",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-85-free-ai-tools-ux.mdx",
+      "completedAt": "2026-06-04T23:31:28.728864",
+      "wordCount": 1500
+    },
+    "A-86": {
+      "phase": "phase10",
+      "title": "8 AX Design Projects to Add to Your Portfolio",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-86-ax-portfolio-projects.mdx",
+      "completedAt": "2026-06-04T23:39:29.357019",
+      "wordCount": 1500
+    },
+    "A-87": {
+      "phase": "phase10",
+      "title": "10 Must-Read Books for UX Designers Entering the AI Era",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-87-ux-ai-books.mdx",
+      "completedAt": "2026-06-04T23:39:29.357019",
+      "wordCount": 1500
+    },
+    "A-88": {
+      "phase": "phase10",
+      "title": "15 UX Design YouTube Channels Worth Your Time in 2025",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-88-ux-youtube-channels.mdx",
+      "completedAt": "2026-06-04T23:39:29.357019",
+      "wordCount": 1500
+    },
+    "A-89": {
+      "phase": "phase10",
+      "title": "10 UX Design Newsletters Every AX Designer Should Subscribe To",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-89-ux-newsletters.mdx",
+      "completedAt": "2026-06-04T23:39:29.357019",
+      "wordCount": 1500
+    },
+    "A-90": {
+      "phase": "phase10",
+      "title": "7 Ways AI Is Making UX Research Faster",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-90-ai-ux-research-faster.mdx",
+      "completedAt": "2026-06-04T23:39:29.357019",
+      "wordCount": 1500
+    },
+    "A-91": {
+      "phase": "phase11",
+      "title": "Weekly Digest Template",
+      "type": "template",
+      "status": "completed",
+      "outputPath": "docs/WEEKLY_DIGEST_TEMPLATE.md",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-92": {
+      "phase": "phase11",
+      "title": "First 5 Weekly Digests",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/digests/",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-93": {
+      "phase": "phase12",
+      "title": "How to Charge More as a UX Designer by Adding AI",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-93-charge-more-ai.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-94": {
+      "phase": "phase12",
+      "title": "The AX Design Course Buyer's Guide",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-94-ax-course-buyers-guide.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-95": {
+      "phase": "phase12",
+      "title": "How to Build an AI UX Audit Service",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-95-ux-audit-service.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-96": {
+      "phase": "phase12",
+      "title": "The AX Design Community",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-96-ax-community.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-97": {
+      "phase": "phase12",
+      "title": "How to Run an AI Design Sprint in 5 Days",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-97-ai-design-sprint.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-98": {
+      "phase": "phase12",
+      "title": "Building a Personal Brand as an AX Designer",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-98-personal-brand-ax.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-99": {
+      "phase": "phase12",
+      "title": "How to Use AI to Do Your UX Work Faster",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-99-ai-ux-workflow.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "A-100": {
+      "phase": "phase12",
+      "title": "The uxintoax.com Manifesto: Why We Built This Platform",
+      "type": "mdx",
+      "status": "completed",
+      "outputPath": "src/pages/a-100-uxintoax-manifesto.mdx",
+      "completedAt": "2026-06-04T23:52:00.585645",
+      "wordCount": 1500
+    },
+    "X-01": {
+      "phase": "nonarticle",
+      "title": "Write all UI microcopy",
+      "type": "document",
+      "status": "completed",
+      "outputPath": "docs/UI_MICROCOPY.md",
+      "completedAt": "2026-06-05T00:33:45.788073"
+    },
+    "X-02": {
+      "phase": "nonarticle",
+      "title": "Write the Newsletter Welcome Sequence (5 emails)",
+      "type": "document",
+      "status": "completed",
+      "outputPath": "docs/NEWSLETTER_WELCOME_SEQUENCE.md",
+      "completedAt": "2026-06-05T00:33:45.788073"
+    },
+    "X-03": {
+      "phase": "nonarticle",
+      "title": "Write 30 LinkedIn Posts",
+      "type": "document",
+      "status": "completed",
+      "outputPath": "docs/30_LINKEDIN_POSTS.md",
+      "completedAt": "2026-06-05T00:33:45.788073"
+    },
+    "X-04": {
+      "phase": "nonarticle",
+      "title": "Generate OG Image Descriptions",
+      "type": "document",
+      "status": "completed",
+      "outputPath": "docs/OG_IMAGE_BRIEFS.md",
+      "completedAt": "2026-06-05T00:33:45.788073"
+    },
+    "X-05": {
+      "phase": "nonarticle",
+      "title": "Build the Internal Linking Map",
+      "type": "document",
+      "status": "completed",
+      "outputPath": "docs/INTERNAL_LINKING_MAP.md",
+      "completedAt": "2026-06-05T00:33:45.788073"
+    }
+  },
+  "phaseProgress": {
+    "foundation": {
+      "completed": 5,
+      "total": 5
+    },
+    "phase1": {
+      "completed": 10,
+      "total": 10
+    },
+    "phase2": {
+      "completed": 0,
+      "total": 5
+    },
+    "phase3": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase4": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase5": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase6": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase7": {
+      "completed": 0,
+      "total": 5
+    },
+    "phase8": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase9": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase10": {
+      "completed": 0,
+      "total": 10
+    },
+    "phase11": {
+      "completed": 0,
+      "total": 2
+    },
+    "phase12": {
+      "completed": 0,
+      "total": 8
+    },
+    "nonarticle": {
+      "completed": 0,
+      "total": 5
+    }
+  },
+  "A-11": {
+    "status": "completed",
+    "completedAt": "2025-06-03",
+    "outputPath": "src/pages/a-11-will-ai-replace-ux-designers.mdx",
+    "type": "Pillar Post",
+    "words": 2500
+  }
+}

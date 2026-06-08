@@ -1,147 +1,74 @@
 # uxintoax.com
 
-The platform for UX designers transitioning into Agent Experience (AX) design.
+**The media brand for UX designers transitioning into the Agent Experience (AX) era.**
 
-## Stack
-
-- **Astro** — static site generator with MDX content
-- **Tailwind CSS v3** — utility-first styling
-- **D3.js** — skills demand charts (loaded from CDN)
-- **Fuse.js** — client-side job board filtering (loaded from CDN)
-- **Cloudflare Pages** — hosting and edge deployment
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-Visit `http://localhost:4321`
-
-## Build
-
-```bash
-npm run build
-```
-
-Output goes to `./dist`. Preview with `npm run preview`.
-
-## Deploy to Cloudflare Pages
-
-### Option 1: Git integration (recommended)
-
-1. Push this repo to GitHub or GitLab.
-2. In the [Cloudflare dashboard](https://dash.cloudflare.com), go to **Pages → Create a project → Connect to Git**.
-3. Select your repo.
-4. Set:
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-5. Click **Save and Deploy**.
-
-Cloudflare Pages will auto-deploy on every push to your main branch.
-
-### Option 2: Direct upload via Wrangler CLI
-
-```bash
-npm install -g wrangler
-npm run build
-wrangler pages deploy dist --project-name=uxintoax
-```
-
-### Custom domain
-
-1. In Cloudflare Pages, go to your project → **Custom domains**.
-2. Add `uxintoax.com` and `www.uxintoax.com`.
-3. Cloudflare handles SSL automatically.
-
-## Project structure
+## Project Structure
 
 ```
-src/
-├── pages/
-│   ├── index.astro           ← Homepage
-│   ├── what-is-ax.astro      ← AX definition page
-│   ├── jobs/index.astro      ← Job board with Fuse.js filtering
-│   ├── skills/index.astro    ← Skills demand charts (D3.js)
-│   └── blog/
-│       ├── index.astro       ← Blog listing
-│       └── [slug].astro      ← Blog post template
-├── components/
-│   ├── Nav.astro             ← Sticky nav with blur-on-scroll
-│   ├── Footer.astro
-│   ├── JobCard.astro
-│   ├── SkillsChart.astro     ← D3 horizontal bar chart
-│   ├── BlogCard.astro
-│   └── SubscribeForm.astro   ← Email capture (wire to Buttondown/ConvertKit)
-├── layouts/
-│   ├── Base.astro            ← HTML shell + SEO + JSON-LD
-│   └── BlogPost.astro        ← Blog post layout
-├── content/
-│   ├── blog/                 ← MDX blog posts
-│   └── jobs/                 ← JSON job listings
-└── data/
-    └── skills.json           ← Weekly/monthly/quarterly/yearly skills data
+uxintoax/
+├── content-tracker.json      # Task progress tracker (auto-updated by Hermes)
+├── docs/                     # Style guides, templates, microcopy, planning docs
+│   ├── STYLE_GUIDE.md        # F-01: Editorial style guide
+│   ├── CONTENT_BRIEF_TEMPLATE.md   # F-02: Content brief template
+│   └── ...                   # X-01 through X-05 outputs
+├── src/pages/                # MDX article files
+│   ├── what-is-ax.mdx        # F-03: Canonical AX definition page
+│   ├── a-01-...mdx           # Phase 1+ articles
+│   └── ...
+├── content/jobs/             # Job listing JSON files
+├── content/skills/           # Skills data JSON files
+└── scripts/                  # Automation scripts for the content pipeline
 ```
 
-## Adding content
+## Content Pipeline
 
-### New blog post
+Managed by Hermes Agent via `content-tracker.json`. Each task tracks:
+- Phase assignment
+- Status (pending → in_progress → completed)
+- Output file path
+- Completion timestamp
 
-Create a file in `src/content/blog/your-slug.mdx`:
+## Content Pillars
 
-```mdx
----
-title: "Your Post Title"
-slug: "your-post-slug"
-description: "150-char description for SEO"
-category: "AX Fundamentals"  # or Career / Tools & Workflow / AI & Design / Case Studies
-author: "uxintoax"
-publishedAt: "2025-06-01"
-updatedAt: "2025-06-01"
-readTime: 5
-featured: false
-faqs:
-  - q: "Question?"
-    a: "Answer."
----
+1. **DEFINE AX** — What is AX, principles, frameworks, history
+2. **CAREER** — UX → AX transition, jobs, salaries, interviews
+3. **TOOLS** — AI tools, workflows, stack, comparisons
+4. **SKILLS** — What to learn, how to learn it, data-driven
+5. **CASE STUDIES** — Real AX in the wild, breakdowns, teardowns
+6. **INDUSTRY** — News, trends, company moves, research digests
 
-Your content here in MDX.
+## Content Types
+
+| Type | Length | Freq |
+|---|---|---|
+| Pillar Post | 2,500–4,000w | 2/mo |
+| Quick Answer | 600–900w | 4/mo |
+| Tool Review | 1,200–1,800w | 4/mo |
+| Data Post | 1,000–1,500w | 2/mo |
+| Teardown | 1,500–2,500w | 2/mo |
+| Career Guide | 1,500–2,500w | 2/mo |
+| News Digest | 400–600w | 4/mo |
+
+## Revenue Model
+
+```
+Layer 1: Traffic → SEO + AEO → organic readers
+Layer 2: List → Newsletter → owned audience
+Layer 3: Trust → Free content → authority + brand
+Layer 4: Revenue → Job board + Courses + Sponsorships + Consulting
 ```
 
-### New job listing
+## Running with Hermes
 
-Create a file in `src/content/jobs/job-006.json`:
+Send prompts to Hermes with task IDs (e.g., `F-01`, `A-01`). The agent reads
+`content-tracker.json` to know what's been done and what's next.
 
-```json
-{
-  "id": "job-006",
-  "title": "UX Designer",
-  "company": "Company Name",
-  "location": "City, Country",
-  "workType": "remote",       // remote | hybrid | on-site
-  "experienceLevel": "mid",   // junior | mid | senior | lead | principal
-  "roleType": "ux-designer",  // ux-designer | ux-researcher | ux-writer | product-designer | ax-designer
-  "salary": "$X – $Y",
-  "skills": ["Figma", "Research"],
-  "description": "Short description (2 lines max).",
-  "applyUrl": "https://...",
-  "postedAt": "2025-06-01",
-  "featured": false
-}
-```
+## The $10M Blogger's Rules
 
-## Subscribe form
-
-The subscribe form outputs email to `console.log` by default. To wire to Buttondown:
-
-1. Get your API key from [buttondown.email](https://buttondown.email).
-2. In `src/components/SubscribeForm.astro`, uncomment the `fetch` block and replace `YOUR_API_KEY`.
-
-## Environment
-
-No environment variables required for a static build. All data is local.
-
-## License
-
-MIT
+1. **The list is the business.** Every article's real job is to get an email.
+2. **Publish ugly, improve fast.** 70% published beats 100% in draft.
+3. **One topic, 10 angles.** Repurpose everything across formats.
+4. **Update beats create.** Updated 2-year-old posts rank faster than new ones.
+5. **Your best article is your next one.** Don't wait for perfect.
+6. **Data is your moat.** Skills charts + job board data = unique authority.
+7. **The job board is the engine.** 500 listings = SEO compounding. 1,000 = media brand.

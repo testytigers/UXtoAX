@@ -1,0 +1,189 @@
+---
+title: "Error Messages in AI Products: Who Gets It Right"
+description: "A UX designer analyzes error messages across AI products — ChatGPT, Claude, Midjourney, Perplexity, and Notion AI — to understand how different companies handle failures and what that reveals about their product maturity."
+keywords: ["ai error messages ux", "ai error handling design", "ai product error states", "chatgpt error messages", "ai ux design error recovery"]
+ogImage: "ai-error-messages-ux.jpg"
+date: "2025-06-04"
+author: "uxintoax Team"
+tags: ["teardown", "UX design", "AI", "error handling", "design systems"]
+pillar: "DEFINE_AX"
+type: "Teardown"
+faq:
+  - question: "Which AI product has the best error messages?"
+    answer: "Notion AI has the best error messages among mainstream AI products. When AI generation fails, Notion shows a clear message with a retry button and suggests alternative prompts. ChatGPT is second-best with its 'Something went wrong' message that includes a retry button. Claude's error handling is adequate but lacks the guidance that Notion provides. Midjourney has the worst — when generation fails, it gives you a generic error with no guidance on how to fix it. The products that handle errors well treat them as part of the user experience, not as afterthoughts."
+  - question: "What makes a good AI error message?"
+    answer: "A good AI error message has three components: (1) clear explanation — what went wrong in plain language; (2) actionable next step — what the user can do to fix it; (3) graceful recovery — an option to retry, modify the prompt, or try an alternative approach. The best AI error messages also acknowledge the uncertainty inherent in AI — they don't pretend the error is a bug when it's actually a limitation of the model. Good AI error messages are honest about what the system can and can't do."
+  - question: "Why do AI products have worse error messages than traditional software?"
+    answer: "AI products have worse error messages because traditional software has deterministic error states (button click → action → result) while AI has probabilistic outcomes (prompt → model → variable result). Traditional software errors are predictable and can be coded into the system. AI errors are unpredictable — the model might generate nonsense, refuse to answer, timeout, or produce unexpected output. This unpredictability makes it harder to design error handling. AI products are still figuring out what kinds of errors they need to handle because the error space is far larger than traditional software."
+---
+
+## The Short Answer
+
+Error messages in AI products are one of the weakest aspects of AI UX because AI introduces error states that traditional software doesn't have. ChatGPT and Notion AI handle errors best with clear explanations and actionable next steps. Midjourney handles errors worst with generic, unhelpful messages. The products that treat error handling as a first-class UX concern — Notion AI, ChatGPT — deliver a better overall experience than those that treat errors as bugs to be fixed.
+
+---
+
+## The AI Error Problem
+
+Traditional software has predictable failures: a button doesn't click, a form doesn't submit, a page doesn't load. These are deterministic errors with known causes and known solutions.
+
+AI has unpredictable failures:
+- The model generates incoherent output
+- The model refuses to answer
+- The prompt triggers a content filter
+- The request times out
+- The model produces a hallucination
+- The API returns an unexpected format
+
+Each of these errors requires a different handling strategy. AI products that treat all errors the same way — a generic "Something went wrong" — are failing their users.
+
+---
+
+## ChatGPT — Good Error Recovery
+
+**Error handling approach: Simple but functional**
+
+When ChatGPT encounters an error, it shows "Something went wrong" with a "Retry" button. This is simple, clear, and actionable. The retry button gives users an immediate way to recover from transient errors.
+
+**Strengths:**
+- Clear, simple error message
+- Immediate retry action
+- Consistent error handling across all error types
+
+**Weaknesses:**
+- Doesn't explain why the error occurred
+- No alternative actions beyond retry
+- Doesn't distinguish between transient and permanent errors
+
+**Assessment:** Good for a product of ChatGPT's scale. The error handling is functional but not exceptional.
+
+---
+
+## Claude — Adequate Error Handling
+
+**Error handling approach: Minimal but honest**
+
+Claude's error messages are straightforward — they acknowledge the error and provide a retry option. Unlike ChatGPT, Claude sometimes explains what went wrong (e.g., "The model is currently overloaded" vs. "Something went wrong").
+
+**Strengths:**
+- More honest about error causes than ChatGPT
+- Clear retry action
+- Consistent error message design
+
+**Weaknesses:**
+- Limited guidance for recovery
+- No alternative actions
+- Some errors are too technical for non-technical users
+
+**Assessment:** Better than ChatGPT at explaining errors, but both lack the guidance that users need to recover effectively.
+
+---
+
+## Midjourney — Worst Error Handling
+
+**Error handling approach: Generic and unhelpful**
+
+When Midjourney generation fails, it shows a generic error with no explanation of what went wrong and no guidance on how to fix it. Users are left guessing — is it a prompt issue? A rate limit? A system error? There's no way to know.
+
+**Strengths:**
+- None worth noting
+
+**Weaknesses:**
+- Generic error message with no explanation
+- No retry option in many cases
+- No guidance on how to fix the problem
+- No distinction between different error types
+
+**Assessment:** One of the worst error handling experiences in any AI product. Midjourney treats error handling as an afterthought rather than a first-class UX concern.
+
+---
+
+## Perplexity AI — Good Contextual Handling
+
+**Error handling approach: Context-aware and actionable**
+
+Perplexity AI's error handling is contextually aware. When a search fails, it explains why and suggests alternative approaches. When a source link is broken, it acknowledges the issue and offers to retry with a different query.
+
+**Strengths:**
+- Context-aware error messages
+- Alternative suggestions for recovery
+- Clear explanation of error causes
+
+**Weaknesses:**
+- Not all error types are handled equally
+- Some errors are too technical
+- Limited guidance for complex errors
+
+**Assessment:** Strong error handling that treats errors as part of the user experience. Better than most AI products.
+
+---
+
+## Notion AI — Best Error Handling
+
+**Error handling approach: Comprehensive and user-centric**
+
+Notion AI's error messages are the best among mainstream AI products. When AI generation fails, it shows:
+- A clear explanation of what went wrong
+- A suggested alternative prompt
+- A retry button
+- An option to modify the prompt
+
+The error messages are designed to keep users in the product rather than driving them to external help documentation.
+
+**Strengths:**
+- Comprehensive error handling with multiple recovery options
+- Suggested alternatives that keep users in the product
+- Clear explanations in plain language
+- Consistent error message design
+
+**Weaknesses:**
+- Not all error types have equal treatment
+- Some suggestions are less helpful than others
+- Error messages can feel repetitive
+
+**Assessment:** The best error handling among AI products. Notion treats errors as a design challenge, not a technical problem.
+
+---
+
+## The AI Error Handling Maturity Spectrum
+
+| Product | Error Quality | Recovery Options | Explanation | Guidance |
+|---|---|---|---|---|
+| Notion AI | Excellent | Multiple | Clear | High |
+| Perplexity | Good | Good | Mostly clear | Moderate |
+| ChatGPT | Good | Retry only | Simple | Low |
+| Claude | Good | Retry only | Mostly clear | Low |
+| Midjourney | Poor | Limited | Poor | None |
+
+---
+
+## What Good AI Error Messages Should Include
+
+1. **Honest explanation** — Don't pretend the error is a bug when it's a model limitation. Be honest about what happened.
+
+2. **Actionable recovery** — Give users something to do. Retry, modify the prompt, try an alternative approach.
+
+3. **Graceful fallback** — When AI fails, offer a non-AI alternative. If the AI can't generate text, offer to help the user write it themselves.
+
+4. **Context awareness** — The error message should acknowledge what the user was trying to do and suggest relevant next steps.
+
+5. **No blame** — Don't make users feel like they did something wrong. AI errors are often user errors, but the message should be empathetic, not accusatory.
+
+---
+
+## The Bottom Line
+
+Error handling in AI products is still immature. Most AI products treat errors as technical problems to be logged and fixed. The best AI products treat errors as part of the user experience — designing recovery flows, offering alternatives, and maintaining trust even when the system fails.
+
+If you're designing an AI product, error handling should be a first-class concern. Users who encounter a well-handled error are more likely to trust your product than users who never encounter an error. The error message is not a bug report — it's a design challenge.
+
+---
+
+*Get the weekly AX brief. One email per week. No fluff.*
+
+---
+
+**Related articles:**
+- [ChatGPT's Interface Is Terrible UX](/a-36-chatgpt-ux-teardown/)
+- [Perplexity AI UX Teardown](/a-37-perplexity-ux-teardown/)
+- [Designing an AI Onboarding Flow](/a-42-ai-onboarding-flow/)

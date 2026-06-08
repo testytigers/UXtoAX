@@ -1,0 +1,101 @@
+---
+title: "Agent Behavior Design"
+description: "How to design the behavior of AI agents — defining what agents should do, when they should act, how they should respond, and how to design agent behavior that users trust and understand."
+keywords: ["agent behavior design", "ai agent behavior", "designing agent behavior", "ax agent design", "ai agent behavior patterns"]
+ogImage: "agent-behavior-design.jpg"
+date: "2025-06-04"
+author: "uxintoax Team"
+tags: ["guide", "UX design", "AI", "agent experience", "behavior design"]
+pillar: "DEFINE_AX"
+type: "Guide"
+faq:
+  - question: "What is agent behavior design?"
+    answer: "Agent behavior design is the practice of defining how AI agents behave — what actions they take, when they take them, how they respond to users, and what constraints they operate within. Unlike traditional UX design, which defines deterministic interactions, agent behavior design defines probabilistic behaviors that must be constrained to produce reliable, trustworthy results."
+  - question: "How do you design agent behavior?"
+    answer: "Agent behavior design involves: (1) defining the agent's purpose and scope, (2) specifying the agent's decision-making logic, (3) setting constraints on the agent's actions, (4) defining the agent's communication style, and (5) testing the agent's behavior with real users. The key is to be specific about what the agent should and should not do."
+  - question: "How much autonomy should AI agents have?"
+    answer: "The right amount of autonomy depends on the risk level. Low-risk agents (email drafts, content suggestions) can have high autonomy. High-risk agents (financial transactions, medical advice) should have low autonomy and require user confirmation. The general rule is: the higher the risk of the agent's actions, the more user confirmation is required."
+---
+
+## The Short Answer
+
+Agent behavior design is about defining how AI agents behave — what they do, when they do it, how they respond, and what constraints govern their actions. The right amount of autonomy depends on risk level. Low-risk agents can be autonomous; high-risk agents require user confirmation.
+
+---
+
+## The Core Framework
+
+### 1. Define the Agent's Purpose
+
+What is the agent trying to achieve? Clear purpose drives clear behavior.
+
+**Examples:**
+- "This agent helps users organize their email inbox."
+- "This agent helps users create presentation slides."
+- "This agent helps users find relevant research papers."
+
+### 2. Define the Agent's Scope
+
+What is the agent allowed to do? What is it not allowed to do?
+
+**Rules:**
+- List specific allowed actions
+- List specific prohibited actions
+- Define boundaries and constraints
+- Specify when the agent should ask for user input
+
+### 3. Define the Agent's Decision Logic
+
+How does the agent decide what to do?
+
+**Options:**
+- Rule-based (if X, then Y)
+- Learning-based (based on patterns in user behavior)
+- Hybrid (rules for high-stakes, learning for low-stakes)
+
+### 4. Define the Agent's Communication Style
+
+How does the agent communicate with users?
+
+**Elements:**
+- Tone (formal, casual, professional, friendly)
+- Length (concise, detailed, adaptive)
+- Style (direct, conversational, instructional)
+
+### 5. Define the Agent's Constraints
+
+What limits the agent's behavior?
+
+**Types:**
+- Safety constraints (cannot perform certain actions)
+- Privacy constraints (cannot access certain data)
+- Temporal constraints (can only act during certain hours)
+- Quantity constraints (can only perform a limited number of actions)
+
+---
+
+## Autonomy Levels
+
+| Level | Description | Examples |
+|---|---|---|
+| L1: Assist | Agent suggests, user decides | ChatGPT responses, design suggestions |
+| L2: Collaborate | Agent acts, user confirms | Email drafts that need review |
+| L3: Delegate | Agent acts, user can review | Auto-filing emails, auto-scheduling meetings |
+| L4: Autonomy | Agent acts without prompting | Auto-responding to routine emails |
+
+---
+
+## The Bottom Line
+
+Agent behavior design is about defining what agents do, when they do it, and how they communicate. Start with clear purpose, define scope and constraints, and set the right level of autonomy based on risk.
+
+---
+
+*Get the weekly AX brief. One email per week. No fluff.*
+
+---
+
+**Related articles:**
+- [The 5 Principles of AX Design](/a-61-5-principles-agent-experience-design/)
+- [Designing AI Agent Personas](/a-66-designing-ai-agent-personas/)
+- [Feedback Loops in Agent Interfaces](/a-68-feedback-loops-agent-interfaces/)

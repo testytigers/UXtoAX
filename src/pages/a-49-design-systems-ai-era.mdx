@@ -1,0 +1,181 @@
+---
+title: "Design Systems in the AI Era"
+description: "How design systems are evolving for AI products — new patterns, new components, new rules, and what every design team needs to know about designing AI systems in 2025."
+keywords: ["design systems ai", "ai design system", "design systems for ai products", "ai era design systems", "ux design system ai 2025"]
+ogImage: "design-systems-ai-era.jpg"
+date: "2025-06-04"
+author: "uxintoax Team"
+tags: ["guide", "UX design", "AI", "design systems", "professional development"]
+pillar: "DEFINE_AX"
+type: "Guide"
+faq:
+  - question: "How are design systems different for AI products?"
+    answer: "AI products need design systems that account for probabilistic output — the same interface can look different every time. Traditional design systems assume deterministic output — the button always looks the same. AI design systems need new components for AI-specific patterns: chat interfaces, prompt inputs, loading states for probabilistic responses, error handling for hallucinations, and confidence indicators."
+  - question: "What new components do AI design systems need?"
+    answer: "AI design systems need: (1) prompt input components — text fields designed for prompt-based interaction, (2) response containers — layouts that handle variable-length AI output, (3) confidence indicators — visual signals that communicate AI uncertainty, (4) error states — designs for AI failures like hallucinations and refusals, (5) loading patterns — animations that communicate AI processing without creating false expectations, and (6) interaction patterns — new ways for users to interact with AI (prompts, follow-up questions, conversation management)."
+  - question: "Do I need a separate design system for AI features?"
+    answer: "No. AI features should be integrated into your existing design system, not built as a separate system. The key is to add AI-specific components and patterns to your existing system. Your typography, color palette, and spacing should remain consistent. Only the AI-specific components are new. The principle is additive, not replacement — add AI patterns to your existing system, don't create a parallel system."
+---
+
+## The Short Answer
+
+Design systems for AI products need new components and patterns that account for probabilistic output, variable-length responses, and AI-specific interaction models. But AI features should be integrated into your existing design system, not built as a separate system. The key is adding AI-specific patterns to your existing foundation.
+
+---
+
+## The Core Difference: Deterministic vs. Probabilistic
+
+Traditional design systems are built for deterministic interfaces — the same button always looks the same, the same form always has the same fields, the same page always has the same layout.
+
+AI interfaces are probabilistic — the same prompt can produce different outputs, the response length varies, the format changes based on context. This fundamental difference requires new design patterns.
+
+---
+
+## New Components for AI Design Systems
+
+### 1. Prompt Input
+
+The prompt input is the primary interaction point for most AI products. It's more than a text field — it needs to support:
+- Variable length (short queries to long prompts)
+- Multi-modal input (text, images, files)
+- Context awareness (understanding previous turns)
+- Formatting support (markdown, code blocks)
+
+**Design principles:**
+- Clear visual hierarchy for input vs. output
+- Visible system state (is the AI thinking?)
+- Easy prompt editing and regeneration
+- Support for common prompt patterns
+
+---
+
+### 2. Response Containers
+
+AI responses are variable — sometimes a short answer, sometimes a long essay. Design systems need containers that handle this variability gracefully.
+
+**Key considerations:**
+- Variable height and width
+- Responsive typography for long and short responses
+- Clear visual separation between input and output
+- Support for different output formats (text, images, code, tables)
+
+---
+
+### 3. Confidence Indicators
+
+AI is probabilistic — it doesn't always know the right answer. Design systems need visual signals that communicate AI certainty.
+
+**Options:**
+- Confidence scores (percentage-based)
+- Certainty labels (high, medium, low)
+- Source citations (for research-based AI)
+- Alternative suggestions (when the AI is uncertain)
+
+---
+
+### 4. Error States
+
+AI errors are different from traditional software errors. The AI might:
+- Generate incorrect output (hallucination)
+- Refuse to answer (content filter)
+- Produce incoherent output (model failure)
+- Timeout or fail (technical error)
+
+Each error type needs a different design pattern.
+
+**Error design principles:**
+- Clear explanation of what went wrong
+- Actionable next steps
+- Graceful recovery options
+- Empathetic messaging
+
+---
+
+### 5. Loading Patterns
+
+AI loading states are different from traditional loading states. The AI is processing, but the user doesn't know how long it will take or what it's doing.
+
+**Loading patterns:**
+- Streaming output (text appears progressively)
+- Processing indicators (the AI is thinking)
+- Estimated completion (when possible)
+- Partial results (showing progress)
+
+---
+
+### 6. Interaction Patterns
+
+AI interactions are different from traditional interactions. Users don't click buttons — they type prompts.
+
+**Key patterns:**
+- Conversation management (history, search, organization)
+- Follow-up questions (natural conversation flow)
+- Prompt editing (modifying and resubmitting)
+- Output regeneration (getting different results)
+
+---
+
+## Integrating AI into Existing Design Systems
+
+The best approach is additive — add AI-specific components to your existing system.
+
+**What to add:**
+- Prompt input components
+- Response container components
+- Confidence indicator components
+- AI error state components
+- AI loading pattern components
+
+**What to keep:**
+- Your typography system
+- Your color palette
+- Your spacing system
+- Your component library (for non-AI parts)
+
+**What to change:**
+- Your documentation (add AI patterns)
+- Your development guidelines (add AI integration rules)
+- Your testing procedures (add AI evaluation)
+
+---
+
+## AI Design System Patterns
+
+### Pattern 1: Progressive Disclosure
+
+AI features should be discovered progressively, not presented all at once. Start with the simplest interaction (a single input field) and reveal more complexity as users engage.
+
+### Pattern 2: Contextual AI
+
+AI should appear where it's most useful. Don't force AI into every part of the product. Make it contextual — it appears when the user is doing something that AI can help with.
+
+### Pattern 3: User Control
+
+Always give users control over AI. They should be able to:
+- Disable AI features
+- Adjust AI behavior
+- Regenerate output
+- Choose between AI suggestions
+
+### Pattern 4: Consistent AI Voice
+
+If your AI communicates with users (through chat, suggestions, or feedback), maintain a consistent voice across all interactions. The AI should sound like your brand, not like a generic chatbot.
+
+---
+
+## The Bottom Line
+
+AI products need new design system components and patterns, but these should be integrated into your existing system, not built as a separate system. The key additions are: prompt input components, response containers, confidence indicators, error states, loading patterns, and interaction patterns.
+
+If you're building a design system for AI products, start with your existing foundation and add AI-specific patterns. The goal is consistency — AI features should feel like part of the same product, not a separate experience.
+
+---
+
+*Get the weekly AX brief. One email per week. No fluff.*
+
+---
+
+**Related articles:**
+- [The AX Designer Skill Stack](/a-46-ax-designer-skill-stack/)
+- [UX Research in 2025: How AI Is Changing](/a-50-ux-research-ai-2025/)
+- [Prompt Design 101](/a-47-prompt-design-101/)

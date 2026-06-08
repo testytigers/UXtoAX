@@ -1,0 +1,252 @@
+---
+title: "Prompt Design 101: The UX Designer's Starter Guide"
+description: "A practical guide to prompt design for UX designers — how to craft effective prompts, structure prompts for AI products, and use prompt design as a core part of your UX toolkit."
+keywords: ["prompt design for ux designers", "prompt engineering guide", "ai prompt design ux", "how to write prompts for ux", "ux designer prompt design"]
+ogImage: "prompt-design-101.jpg"
+date: "2025-06-04"
+author: "uxintoax Team"
+tags: ["guide", "UX design", "AI", "prompt design", "prompt engineering"]
+pillar: "DEFINE_AX"
+type: "Guide"
+faq:
+  - question: "What is prompt design?"
+    answer: "Prompt design is the practice of crafting effective instructions for AI models to produce desired outputs. It's like programming for AI — instead of writing code, you write natural language instructions that guide the model's behavior. For UX designers, prompt design is a core skill because the quality of prompts directly affects the quality of AI output in products."
+  - question: "Do I need to be technical to do prompt design?"
+    answer: "No. Prompt design is fundamentally a communication skill — it's about being clear, specific, and structured in your instructions. You don't need to know how AI models work internally. You just need to understand that AI models respond to clear, well-structured instructions and produce better output when you give them specific guidance."
+  - question: "What are the most important prompt design principles?"
+    answer: "The three most important prompt design principles are: (1) specificity — be clear about what you want; (2) context — provide relevant background information; (3) constraints — set clear boundaries for the output. These three principles account for most of the difference between a good prompt and a bad prompt. Specificity tells the AI what to do. Context tells the AI what it's working with. Constraints tell the AI what not to do."
+---
+
+## The Short Answer
+
+Prompt design is the practice of crafting effective instructions for AI models. It's the new programming language for AI products, and it's becoming as essential for UX designers as wireframing and prototyping. The three core principles are specificity, context, and constraints. Master these, and you'll write prompts that produce reliable, useful output.
+
+---
+
+## What Is Prompt Design?
+
+Prompt design is the process of creating instructions (prompts) that guide AI models to produce specific, reliable output. It's not about being clever or creative — it's about being clear, specific, and structured.
+
+**Bad prompt:** "Write something about AI."
+
+**Good prompt:** "Write a 200-word introduction to AI for non-technical readers. Use simple language, include one real-world example, and end with a question that encourages readers to think about AI in their daily lives."
+
+The good prompt is better because it's specific (200 words, for non-technical readers), contextual (simple language, one example), and constrained (end with a question).
+
+---
+
+## The 3 Core Principles of Prompt Design
+
+### Principle 1: Specificity
+
+**What it means:** Be clear about exactly what you want. Vague prompts produce vague output. Specific prompts produce specific output.
+
+**Example:**
+
+Vague: "Write a description of our product."
+
+Specific: "Write a 150-word product description for our project management tool. Target audience: engineering teams at companies with 50-200 employees. Focus on: speed, simplicity, and keyboard navigation. Tone: professional but approachable. Include one sentence about our AI features."
+
+**Why it matters:** AI models don't know what you want unless you tell them. The more specific you are, the better the output.
+
+**Tips:**
+- Use word counts
+- Specify the audience
+- Define the tone
+- List required elements
+- Set constraints
+
+---
+
+### Principle 2: Context
+
+**What it means:** Provide relevant background information that helps the model understand the task.
+
+**Example:**
+
+Without context: "Rewrite this paragraph."
+
+With context: "Rewrite this paragraph for a blog post about UX design. The audience is junior designers. The current paragraph is too technical — simplify it without losing the key points. Maintain a conversational, approachable tone."
+
+**Why it matters:** Context helps the AI understand the task better. Without context, it makes assumptions that are often wrong.
+
+**Tips:**
+- Explain the purpose of the task
+- Describe the audience
+- Include examples of desired output
+- Reference relevant documents or data
+- Specify the format
+
+---
+
+### Principle 3: Constraints
+
+**What it means:** Set clear boundaries for the output. Constraints reduce variability and improve quality.
+
+**Example:**
+
+No constraints: "Generate a product name."
+
+With constraints: "Generate 10 product names for a project management tool. Each name should be 1-3 words, easy to pronounce, and memorable. Avoid words like 'smart,' 'ai,' or 'pro.' The names should sound professional but not corporate."
+
+**Why it matters:** Constraints give the AI a clear boundary to work within. Without constraints, the output is too broad to be useful.
+
+**Tips:**
+- Set word limits
+- Specify format requirements
+- Exclude certain words or styles
+- Define the output structure
+- Use examples to show what you want
+
+---
+
+## Prompt Structures for Common UX Tasks
+
+### 1. Content Generation
+
+**Template:**
+```
+Write [type of content] about [topic] for [audience]. 
+The tone should be [tone]. 
+Include [specific elements]. 
+Limit to [word count] words.
+Do not include [exclusions].
+```
+
+**Example:**
+```
+Write a 500-word blog post about AI in UX design for junior designers.
+The tone should be encouraging and practical.
+Include three real-world examples of AI tools that UX designers can use.
+Limit to 500 words.
+Do not use technical jargon or explain how AI models work.
+```
+
+---
+
+### 2. Content Rewriting
+
+**Template:**
+```
+Rewrite this [type of text] to be [desired quality].
+Target audience: [audience]
+Tone: [tone]
+Length: [length]
+Specific improvements: [list]
+```
+
+**Example:**
+```
+Rewrite this product description to be more conversational and engaging.
+Target audience: non-technical business users
+Tone: friendly and approachable
+Length: 200 words
+Specific improvements: simplify technical terms, add a relatable analogy, end with a call to action
+```
+
+---
+
+### 3. Question Generation
+
+**Template:**
+```
+Generate [number] questions about [topic] for [audience].
+Questions should be [question type].
+Each question should be [question length] words.
+Format: [format]
+```
+
+**Example:**
+```
+Generate 5 quiz questions about AI ethics for UX designers.
+Questions should be multiple choice with 4 options each.
+Each question should be under 30 words.
+Format: question, followed by 4 options labeled A-D.
+```
+
+---
+
+### 4. Research Summarization
+
+**Template:**
+```
+Summarize this [document type] for [audience].
+Focus on [specific topics].
+Include [specific elements].
+Format: [format]
+```
+
+**Example:**
+```
+Summarize this user research report for product stakeholders.
+Focus on key findings and actionable recommendations.
+Include a bulleted list of the top 5 insights.
+Format: one-paragraph summary, followed by 5 bullet points.
+```
+
+---
+
+## Advanced Prompt Techniques
+
+### Few-Shot Prompting
+
+**What it is:** Providing examples in the prompt to show the model what you want.
+
+**Example:**
+```
+Generate product names in the style of these examples:
+- Linear: one word, tech-forward
+- Notion: one word, conceptual
+- Figma: one word, abstract
+
+Generate 5 product names for a design tool that follows these patterns.
+```
+
+### Chain-of-Thought Prompting
+
+**What it is:** Asking the model to think through the problem step by step.
+
+**Example:**
+```
+Before generating the response, think through:
+1. What is the user trying to achieve?
+2. What are the key constraints?
+3. What would be the most helpful response?
+
+Then generate the response.
+```
+
+---
+
+## Testing and Iterating Prompts
+
+**Test your prompts by:**
+1. Running the prompt multiple times
+2. Comparing outputs for consistency
+3. Checking if the output meets your requirements
+4. Iterating based on what's missing or wrong
+
+**Iterate by:**
+1. Adding specificity where output is vague
+2. Adding context where output is off-topic
+3. Adding constraints where output is too broad
+4. Removing constraints where output is too narrow
+
+---
+
+## The Bottom Line
+
+Prompt design is a core skill for AI-era UX designers. The three principles are specificity, context, and constraints. Master these, and you'll write prompts that produce reliable, useful output.
+
+Think of prompt design like writing clear specifications for a developer. The more specific and structured your instructions, the better the result. The same principle applies to AI — but instead of technical specs, you're writing natural language instructions.
+
+---
+
+*Get the weekly AX brief. One email per week. No fluff.*
+
+---
+
+**Related articles:**
+- [The AX Designer Skill Stack](/a-46-ax-designer-skill-stack/)
+- [How to Learn AI Without a Tech Background](/a-48-learn-ai-without-tech-background/)
+- [UX Research in 2025: How AI Is Changing](/a-50-ux-research-ai-2025/)

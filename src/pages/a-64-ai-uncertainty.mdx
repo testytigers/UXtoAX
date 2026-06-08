@@ -1,0 +1,84 @@
+---
+title: "Designing for AI Uncertainty"
+description: "How to design AI products that communicate uncertainty effectively — when to show confidence scores, how to handle ambiguous outputs, and patterns for designing probabilistic interfaces."
+keywords: ["ai uncertainty design", "designing for ai uncertainty", "ai confidence design", "probabilistic interfaces", "ax uncertainty"]
+ogImage: "designing-ai-uncertainty.jpg"
+date: "2025-06-04"
+author: "uxintoax Team"
+tags: ["guide", "UX design", "AI", "uncertainty", "agent experience"]
+pillar: "DEFINE_AX"
+type: "Guide"
+faq:
+  - question: "How do you design for AI uncertainty?"
+    answer: "You design for AI uncertainty by: (1) showing confidence indicators, (2) providing alternative suggestions, (3) using conditional UI (showing different UI based on confidence level), and (4) allowing users to adjust AI behavior to be more or less confident. The key insight is that uncertainty is not a bug — it's a fundamental characteristic of AI systems that must be designed for."
+  - question: "Should AI always show confidence scores?"
+    answer: "Not always. Confidence scores are useful for high-stakes decisions (financial, medical) but can be distracting for low-stakes interactions (chat, casual conversation). The rule is: show confidence indicators when the user needs to make a decision based on the AI output. Don't show them when the AI output is informational and doesn't require a decision."
+---
+
+## The Short Answer
+
+Designing for AI uncertainty means designing interfaces that communicate when the AI is confident and when it's uncertain. The techniques are: confidence indicators, alternative suggestions, conditional UI, and adjustable behavior. Confidence scores should be shown when users need to make decisions, not in casual interactions.
+
+---
+
+## The Core Challenge
+
+AI is probabilistic — it doesn't always know the right answer. Users need to understand when the AI is confident and when it's guessing. Designing for uncertainty means making the AI's confidence level visible and actionable.
+
+---
+
+## Techniques for Designing Uncertainty
+
+### 1. Confidence Indicators
+
+Visual signals that communicate AI certainty.
+
+**Types:**
+- Numerical (85% confident)
+- Categorical (High, Medium, Low)
+- Visual (color, opacity, size)
+- Textual ("I'm pretty sure..." vs "I know that...")
+
+### 2. Alternative Suggestions
+
+When the AI is uncertain, offer alternatives.
+
+**Techniques:**
+- Multiple suggestions with confidence labels
+- "Other options" links
+- "Not what you wanted? Try..." prompts
+
+### 3. Conditional UI
+
+Change the interface based on AI confidence level.
+
+**Examples:**
+- High confidence: Show result directly
+- Medium confidence: Show result with a disclaimer
+- Low confidence: Show alternatives or ask for more information
+
+### 4. Adjustable Behavior
+
+Let users control AI confidence levels.
+
+**Options:**
+- Conservative mode (more certain, fewer options)
+- Balanced mode (default)
+- Creative mode (more options, more uncertain)
+
+---
+
+## The Bottom Line
+
+AI uncertainty is a fundamental characteristic that must be designed for. The four techniques are confidence indicators, alternative suggestions, conditional UI, and adjustable behavior. Show confidence when it matters, hide it when it doesn't.
+
+---
+
+*Get the weekly AX brief. One email per week. No fluff.*
+
+---
+
+**Related articles:**
+- [The 5 Principles of AX Design](/a-61-5-principles-agent-experience-design/)
+- [Trust Design for AI Products](/a-63-trust-design-ai-products/)
+- [The AX Design Process](/a-65-ax-design-process/)

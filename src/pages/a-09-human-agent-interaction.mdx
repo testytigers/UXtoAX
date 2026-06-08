@@ -1,0 +1,156 @@
+---
+title: "What is Human-Agent Interaction? The Designer's Guide"
+description: "Human-Agent Interaction (HAI) is the study of how humans interact with autonomous AI agents. It's a new field that combines UX, HCI, and AI research. Here's the designer's guide."
+slug: "/what-is-human-agent-interaction"
+date: "2025-06-11"
+updatedDate: null
+pillar: "Define AX"
+type: "Quick Answer"
+keywords:
+  - "human agent interaction design"
+  - "what is HAI"
+  - "human-AI interaction"
+  - "designing for AI agents"
+readTime: 5
+authors:
+  - name: "Yahya"
+    role: "Founder, uxintoax.com"
+    avatar: "/avatars/yahya.jpg"
+faq:
+  - question: "What is Human-Agent Interaction (HAI)?"
+    answer: "Human-Agent Interaction (HAI) is the study and design of how humans interact with autonomous AI agents. It goes beyond traditional human-computer interaction (HCI) by accounting for agent autonomy, non-deterministic behavior, and the unique challenges of designing for systems that act on their own."
+  - question: "How is HAI different from HCI?"
+    answer: "Traditional HCI assumes the user controls the interaction. HAI assumes the agent also has agency. In HCI, the user directs the system. In HAI, the user sets a goal and the agent decides how to achieve it. That shift creates entirely new design problems."
+  - question: "What are the core challenges in HAI?"
+    answer: "Trust calibration (how much should users trust the agent?), transparency (how to make agent reasoning visible?), control (how to give users agency without undermining autonomy?), and failure management (how to handle agent mistakes gracefully)."
+  - question: "What real products demonstrate HAI design?"
+    answer: "ChatGPT with plugins (agent takes actions beyond text), Microsoft Copilot (agent acts within applications), Google's AI Overviews (agent synthesizes and presents information), and autonomous research agents (agent plans, searches, and reports independently)."
+internalLinks:
+  - slug: "/what-is-ax"
+    text: "The definitive guide to Agent Experience (AX) design"
+  - slug: "/what-is-agentic-ai"
+    text: "What is Agentic AI? A Plain-English Guide for Designers"
+  - slug: "/agent-experience-vs-ux-design"
+    text: "AX vs UX Design: What's Actually Different?"
+ogImage: "/og/a-09-human-agent-interaction.png"
+---
+
+Human-Agent Interaction (HAI) is the study and design of how humans interact with autonomous AI agents.
+
+It's not a new buzzword. It's a new field — combining insights from human-computer interaction (HCI), AI research, cognitive science, and UX design — to solve a fundamentally new problem: how do humans work with systems that have their own agency?
+
+## HAI vs HCI: The Key Difference
+
+Traditional Human-Computer Interaction (HCI) assumes the user is in control. The human initiates the interaction. The computer responds. The flow is deterministic.
+
+Human-Agent Interaction (HAI) assumes both parties have agency. The human sets a goal. The agent decides how to achieve it. The flow is non-deterministic. The agent observes, plans, acts, evaluates, and iterates — and the human observes all of that.
+
+| HCI | HAI |
+|---|---|
+| Human controls interaction | Agent has own agency |
+| Predictable input → output | Probabilistic behavior |
+| User directs system | User sets goals, agent plans |
+| System waits for input | System acts autonomously |
+| Interface is primary | Behavior is primary |
+
+The shift from HCI to HAI is like the shift from desktop to mobile. It wasn't about a different screen size — it was about a fundamentally different relationship between user and system.
+
+## Real Examples of HAI in the Wild
+
+You're already interacting with agents. These products demonstrate HAI design:
+
+**ChatGPT with plugins.** Instead of just generating text, ChatGPT can now book flights, search the web, run code, and interact with other apps. The user says "find me a hotel in Paris and book it." The agent plans: search for hotels → compare options → present choices → confirm booking. The interaction is no longer just a conversation — it's an autonomous workflow.
+
+**Microsoft Copilot.** Copilot acts within applications. It doesn't just answer questions — it creates documents, analyzes spreadsheets, and summarizes meetings. It observes the user's context and proactively offers help. The agent's behavior is the interaction.
+
+**Autonomous research agents.** These agents receive a research goal, plan their approach, search databases, analyze findings, and produce reports — without step-by-step prompting. The user sets the goal. The agent figures out the rest.
+
+Each of these products demonstrates a different aspect of HAI design. Together, they show the range of what's possible.
+
+## The Core Design Challenges
+
+HAI introduces design problems that don't exist in traditional UX:
+
+### 1. Trust Calibration
+
+How much should users trust the agent? Too much trust leads to over-reliance and errors. Too little trust leads to rejection of correct suggestions.
+
+Designing for trust means:
+- Showing confidence levels
+- Explaining reasoning transparently
+- Being honest about limitations
+- Providing clear ways to verify results
+
+### 2. Transparency
+
+How do you make the agent's reasoning visible without overwhelming the user?
+
+The agent may search 50 sources, filter them, synthesize findings, and produce a summary. The user needs to understand: What did it look at? Why did it choose this conclusion? What did it rule out?
+
+Transparency isn't about showing every step. It's about showing enough to build understanding without causing cognitive overload.
+
+### 3. Control vs Autonomy
+
+How much control should the user have? Too much control turns the agent into a tool. Too little control turns it into a black box.
+
+The HAI designer's challenge is finding the sweet spot: enough autonomy to make the agent useful, enough control to make the user feel safe.
+
+### 4. Failure Management
+
+When a traditional app fails, the error is usually clear: "Connection failed" or "File not found."
+
+When an agent fails, the failure is often subtle. The agent may produce a plausible-sounding but incorrect answer. It may make a reasonable-sounding but bad decision. The user needs to detect, understand, and correct agent errors — without knowing exactly how the agent works.
+
+## The Design Implications
+
+HAI changes what designers need to focus on:
+
+**Design the agent's decision-making process.** Not just the output, but the reasoning. Define the criteria the agent uses, the trade-offs it considers, and the fallback behaviors it employs.
+
+**Design for non-determinism.** Test the agent across 50+ scenarios, not just one. Identify patterns in agent mistakes. Design recovery paths for common failure modes.
+
+**Design the human's mental model.** Help users understand what the agent can do, how it works, and where it might fail. A clear mental model leads to better trust calibration and more effective collaboration.
+
+**Design the collaboration, not just the interface.** The human-agent relationship is a collaboration. Design for that — how they work together, how they communicate, how they resolve disagreements, how they learn from each other.
+
+## What This Means for UX Designers
+
+HAI doesn't replace UX design. It extends it into a new domain. Your existing skills — user research, empathy, systems thinking, iterative design — are all directly applicable.
+
+What you need to add:
+- Understanding of agent capabilities and limitations
+- Prompt design and conversation design skills
+- Ability to evaluate and iterate on non-deterministic outputs
+- Skills in transparency and trust design
+
+The shift from HCI to HAI is happening right now. The designers who learn it first will define how humans interact with the most powerful technology of the next decade.
+
+## Frequently Asked Questions
+
+### What is Human-Agent Interaction (HAI)?
+
+Human-Agent Interaction (HAI) is the study and design of how humans interact with autonomous AI agents. It goes beyond traditional human-computer interaction (HCI) by accounting for agent autonomy, non-deterministic behavior, and the unique challenges of designing for systems that act on their own.
+
+### How is HAI different from HCI?
+
+Traditional HCI assumes the user controls the interaction. HAI assumes the agent also has agency. In HCI, the user directs the system. In HAI, the user sets a goal and the agent decides how to achieve it. That shift creates entirely new design problems.
+
+### What are the core challenges in HAI?
+
+Trust calibration (how much should users trust the agent?), transparency (how to make agent reasoning visible?), control (how to give users agency without undermining autonomy?), and failure management (how to handle agent mistakes gracefully).
+
+### What real products demonstrate HAI design?
+
+ChatGPT with plugins (agent takes actions beyond text), Microsoft Copilot (agent acts within applications), Google's AI Overviews (agent synthesizes and presents information), and autonomous research agents (agent plans, searches, and reports independently).
+
+---
+
+*Next: [How to Become an AX Designer in 2025 (Step-by-Step)](/how-to-become-an-ax-designer)*
+
+---
+
+**Want to understand AX design without the fluff?**
+
+Subscribe to the weekly AX brief. One email, every Monday. No spam, no hot takes — just the skills, insights, and resources you need to transition from UX to AX.
+
+[Subscribe →]
